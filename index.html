@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Магазин духов</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bordered-bottom fixed-top mb-5"  style="background-color: #fff;">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Главная</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Магазин</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Отзывы клиентов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="justify-content-end"><img src="img/Корзина.png" width="35"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+      </nav>
+      <!-- Картинка с текстом -->
+        <div class="container mt-5" style="background-image: url(img/22.png); background-repeat: no-repeat; background-size: auto; height: 570px; padding: 0;">
+            <div class="row align-items-end ">
+
+                <div class="col-5 text-center " style="margin-top: 250px;">
+                    <p class="display-5">Магазин парфюмерии</p>
+                    <p class="display-6">Найди свой аромат</p><br><br><br>
+                    <a href="#" class="floating-button buttonWrap cnopka">Купить</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-3 my-sm-5">
+          <div class="container">
+            <h2 class="display-6 text-center mb-4" style="color: #79253D;">У нас есть</h2>
+          <div class="row d-flex justify-content-between mb-3">
+          <div class="col-lg-3">
+            <figure>
+            <img src="img/12.png" class="img-fluid">
+            <div class="row text-center mt-2">
+              <div class="col">
+            <p class="button_img">Мужские ароматы</p>
+          </div>
+        </div>
+          </div>
+          <div class="col-lg-3">
+            <img src="img/13.png" class="img-fluid">
+            <div class="row text-center mt-2">
+              <div class="col">
+            <p class="button_img">Женские ароматы</p>
+          </div>
+        </div>
+          </div>
+          <div class="col-lg-3">
+            <img src="img/14.png" class="img-fluid">
+            <div class="row text-center mt-2">
+              <div class="col">
+            <p class="button_img">Ароматы для дома</p>
+          </div>
+        </div>
+          </div>
+          </div>
+          <div class="row text-center">
+          <div class="col">
+           <a href="#" class="floating-button1 col-3 mb-3 mt-2">Перейти в магазин</a>
+          </div>
+        </div>
+          </div>
+          </div>
+
+          <!-- Карусель -->
+          <div id="carouselExampleDark" class="container-fluid container carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/Карусель.svg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="img/Карусель.svg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="img/Карусель.svg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+
+          <div class="container justify-content-center">
+
+            <div class="row justify-content-center">
+           
+            <div class="col-lg-10 col-lg-offset-2">
+           <form>
+            <h1 class="text-center display-5 mb-5 mt-5">Оставьте отзыв</h1>
+            <div id="contact-form" method="post" action="contact.php" role="form">
+            <div class="controls">
+            <div class="row">
+            <div class="col-md-6 mb-4">
+            <div class="form-group">
+            <label for="form_name">Имя*</label>
+            <input id="form_name" type="text" name="name" class="form-control fom" placeholder="Введите свое имя*" required="required" data-error="Firstname is required.">
+            <div class="help-block with-errors"></div>
+            </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+              <label for="form_email">Эл. почта*</label>
+              <input id="form_email" type="email" name="email" class="form-control fom" placeholder="Добавьте свою эл. почту*" required="required" data-error="Valid email is required.">
+              <div class="help-block with-errors"></div>
+              </div>
+              </div>
+            </div>
+           
+            <div class="row ">
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+              <label for="form_phone">Телефон</label>
+              <input id="form_phone" type="tel" name="phone" class="form-control fom" placeholder="Добавьте свой телефон">
+              <div class="help-block with-errors"></div>
+              </div>
+              </div>
+           
+              <div class="col-md-6 mb-4">
+                <div class="form-group">
+                <label for="form_phone">Адрес</label>
+                <input id="form_phone" type="text" name="text" class="form-control fom" placeholder="Добавьте адрес">
+                <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                </div>
+              </div>
+
+
+            <div class="row">
+            <div class="col-md-12 mb-4">
+            <div class="form-group">
+            <label for="form_message">Тема*</label>
+            <textarea id="form_message" name="message" class="form-control fom" placeholder="Укажите тему" rows="2" required="required" data-error="Please,leave us a message."></textarea>
+            <div class="help-block with-errors"></div>
+            </div>
+            </div>
+           </div>
+
+            <div class="row">
+              <div class="col-md-12 mb-4">
+              <div class="form-group">
+              <label for="form_message">Сообщение*</label>
+              <textarea id="form_message" name="message" class="form-control fom" placeholder="Добавьте сообщение..." rows="2" required="required" data-error="Please,leave us a message."></textarea>
+              <div class="help-block with-errors"></div>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+            <div class="form-group">
+            <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+            <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"></div>
+            </div>
+            </div>
+            <div class="row text-center mb-5">
+            <div class="col-md-12">
+              <a href="#" class="floating-button1 col-3 mt-5">Отправить</a>
+             </div>
+            </div>
+           
+            </div>
+           
+            </form>
+           
+            </div><!-- /.col-lg-8 col-lg-offset-2 -->
+           
+            </div> <!-- /.row-->
+           
+            </div> <!-- /.container-->
+
+    <!-- footer -->
+    <div class="" style="padding: 0;">
+        <footer style="background-color: #ffede7;">
+          <div class="container pt-4">
+            <div class="row d-flex justify-content-between">
+              <div class="col-lg-4 col-md-6 mb-4">
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-1">
+                    <a href="#!" style="color: #4f4f4f;">Магазин</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #4f4f4f;">О нас</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #4f4f4f;">Отзывы клиентов</a>
+                  </li>
+                  <li>
+                    <a href="#!" style="color: #4f4f4f;">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <img src="img/Line 3.png" height="132px">
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-1">
+                    <a href="#!" style="color: #4f4f4f;">Каширское ш., 61, Москва, 115582, Россия</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #4f4f4f;">pochta@mail.ru</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #4f4f4f;">+7 123 456 78 90</a>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-2">
+                      <a href="#!" style="color: #4f4f4f;"><img src="img/Инстаграмм 2.svg"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#!" style="color: #4f4f4f;"><img src="img/Ватсап 2.svg"></a>
+                    </div>
+                    <div class="col-2">
+                      <a href="#!" style="color: #4f4f4f;"><img src="img/Telegram.svg"></a>
+                    </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
